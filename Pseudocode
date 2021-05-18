@@ -1,0 +1,68 @@
+//Start with begin (in caps, to begin the program)
+BEGIN
+
+//Your program designated or allows user to choose options
+CHOOSE OPTION
+
+//List your options and commands, what you want your system to do
+OPTION 1= REGISTRING; OPTION 2= SETUP SUBJECT; OPTION 3= ENTER RESULTS; 4= REPORTING TOOLS; 0=QUIT
+
+//Declare the variables, type of variables
+	VARIABLE DECLARATION
+  
+//Display the list of options when you run the command 
+	DISPLAY MAIN MENU
+	DISPLAY REGISTRING NEW STUDENT 
+	DISPLAY STUDENT RESULTS
+	DISPLAY REPORTING TOOLS
+	DISPLAY QUIT
+ 
+//Create a statement, make it simple as possible 
+IF ([main function] ==1){
+PRINT ENTER STUDENT NAME;
+READ STUDENT NAME;
+PRINT ENTER STUDENT ADDRESS;
+READ STUDENT ADDRESS;
+PRINT CONTACT NUMBER;
+READ CONTACT NUMBER
+PRINT ENTER GENDER;
+READ GENDER;
+PRINT ENTER NATIONALITY;
+READ NATIONALITY;
+}
+
+//Create a else..if.. statement, so that the user allow to run another command
+//Include a read command too
+
+ELSE IF ([MAIN FUNCTION] ==2) {
+	PRINT ENTER NUMBER OF SUBJECT;
+	READ NUMBER OF SUBJECT;
+	PRINT ENTER SUBJECT CODE [SUBJECT (1)];
+READ SUBJECT CODE
+PRINT ENTER SUBJECT NAME;
+READ SUBJECT NAME;
+PRINT CREDIT HOUR;
+READ CREDIT HOUR;
+}
+
+//Repeat the loops, if bossible
+
+IF ([MAIN FUNCTION] ==3) {
+PRINT ENTER STUDENT ID;
+READ STUDENT ID;
+PRINT ENTER NUMBER OF SUBJECT;
+READ NUMBER OF SUBJECT;
+PRINT ENTER SUBJECT CODE;
+READ SUBJECT CODE;
+PRINT ENTER SCORE;
+READ SCORE;
+
+//Display the results at the end
+
+DISPLAY STUDENT ID;
+DISPLAY STUDENT NAME;
+	DISPLAY SUBJECT CODE, SUBJECT NAME;
+	DISPLAY SCORE;
+	DISPLAY GPA, CGPA;
+}
+
